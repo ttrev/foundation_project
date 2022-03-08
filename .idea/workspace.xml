@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93c7a13c-7654-4238-ae68-695b45edb3bf" name="Changes" comment="" />
+    <list default="true" id="93c7a13c-7654-4238-ae68-695b45edb3bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foundation_project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/api/daos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/api/daos/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/api/testDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/api/testDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/api/daos/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/api/daos/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/revature/api/testDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/revature/api/testDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trevor_foundation_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/trevor_foundation_project.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -29,6 +44,7 @@
     </option>
   </component>
   <component name="ProjectId" id="25mmn8VAbdGNJbem9LX40Ne7m2R" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -49,13 +66,14 @@
       <recent name="$PROJECT_DIR$/src/" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.revature.api.util" />
       <recent name="com.revature.api.daos" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.revature.api.daos" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.testDriver">
     <configuration name="testDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.revature.api.testDriver" />
       <module name="trevor_foundation_project" />
@@ -69,9 +87,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConnectionFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trevor_foundation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.api.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature.api.util" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.api.util.ConnectionFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.testDriver" />
+        <item itemvalue="JUnit.ConnectionFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -85,6 +119,17 @@
       <updated>1646140802938</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

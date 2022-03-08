@@ -5,6 +5,7 @@ import com.revature.api.models.Users;
 import com.revature.api.util.ConnectionFactory;
 import com.revature.api.util.exceptions.DataSourceException;
 import com.revature.api.util.exceptions.ResourcePersistenceException;
+import sun.awt.X11.XSystemTrayPeer;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,9 +18,11 @@ import java.util.List;
 import java.sql.*;
 
 public class UserDAO implements CrudDAO<Users>{
-    private  final String rootSelect = "SELECT * FROM users eu " +
-            "JOIN user_roles eur " +
+
+    private  final String rootSelect = "SELECT * FROM ers_users eu " +
+            "JOIN ers_user_roles eur " +
             "ON eu.role_id = eur.role_id ";
+
 
     public Users findUserByUsername(String username){
         Users user = null;
@@ -247,22 +250,31 @@ public class UserDAO implements CrudDAO<Users>{
 
         try(Connection conn = ConnectionFactory.getInstance().getConnection()) {
 
-            PreparedStatement pstmt = conn.prepareStatement(
-                    rootSelect + "WHERE user_id = ?");
+
+            PreparedStatement pstmt = conn.prepareStatement(rootSelect + "WHERE user_id = ?");
+
             pstmt.setString(1, id);
             ResultSet rs = pstmt.executeQuery();
 
             if(rs.next()){
+                System.out.println(rs.getString("user_id"));
+
                 user = new Users();
                 user.setUserId(rs.getString("user_id"));
-                user.setUserName(rs.getString("username"));
+                user.setUserName(rs.getString("userName"));
+
                 user.setEmail(rs.getString("email"));
                 user.setPassword(rs.getString("password"));
                 user.setGivenName(rs.getString("given_name"));
+
                 user.setSurname(rs.getString("surname"));
                 user.setIsActive(rs.getBoolean("is_active"));
                 user.setUserRole(new UserRoles(rs.getString("role_id"), rs.getString("role")));
+
+
             }
+
+
         }
         catch (SQLException e) {
             throw new DataSourceException(e);

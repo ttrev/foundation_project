@@ -8,7 +8,7 @@ public class testDriver {
     public static void main(String[] args) {
         UserDAO userDao = new UserDAO();
 
-        Users user = userDao.getById("1");
+        Users user = userDao.getById("user3");
 
         System.out.println(user);
 
